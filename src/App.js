@@ -22,8 +22,9 @@ const fetchEvents = async () => {
     throw new Error(`Error fetching events: ${res.statusText}`);
   }
   const json = await res.json();
-  return json.data;
+  return json.data; 
 };
+
 
 
 function App({}) {
